@@ -1,4 +1,3 @@
-from turtle import st
-import streamlit as st
+import streamlit as lt
 
-st.write("Hola mundo estoy en un bootcamp");
+lt.write("hola a todos, por favor que funcione")
