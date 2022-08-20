@@ -13,8 +13,9 @@ st.header("Resolucion Ejercicio 3 Inventory Discrepancy")
 
 df_expected = pd.read_csv("https://storage.googleapis.com/mojix-devops-wildfire-bucket/analytics/bootcamp_2_0/Bootcamp_DataAnalysis_Expected.csv", encoding="latin-1", dtype=str)
 df_counted = pd.read_csv("https://storage.googleapis.com/mojix-devops-wildfire-bucket/analytics/bootcamp_2_0/Bootcamp_DataAnalysis_Counted.csv", encoding="latin-1", dtype=str)
-
+st.markdown("ver dataframe expected")
 df_expected.sample(2).T
+st.header("COUNTED TRANSFORMATION")
 df_counted.shape
 df_counted['RFID'].nunique()
 df_counted = df_counted.drop_duplicates("RFID")
