@@ -10,7 +10,7 @@ if file:
     st.dataframe(df)
     st.markdown("------")
     fig1=plt.figure(figsize=(10,4))
-    sns.countplot(x="Pclass",data=df)
+    sns.countplot(x='Pclass',data=df)
     st.pyplot(fig1)
     fig2=plt.figure(figsize=(10,4))
 
