@@ -20,6 +20,7 @@ st.header("COUNTED TRANSFORMATION")
 df_counted.shape
 df_counted['RFID'].nunique()
 df_counted = df_counted.drop_duplicates("RFID")
+st.header("GROUPBY by Retail_Product_SKU")
 df_B = df_counted.groupby("Retail_Product_SKU").count()[["RFID"]].reset_index().rename(columns={"RFID":"Retail_CCQTY"})
 df_B.sample(10)
 my_cols_selected = ["Retail_Product_Color",
