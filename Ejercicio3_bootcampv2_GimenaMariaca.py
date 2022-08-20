@@ -5,9 +5,9 @@ st.sidebar.markdown("### OVERVIEW ###")
 st.sidebar.markdown("Stock/Inventory Discrepancy is the process where ytem Retail compares the SOH data sent by the customer with the scanned items during anInventory workflow using the ytem app.")
 st.sidebar.image('imagenes/imagen1.png')
 st.sidebar.markdown("The Discrepancy process has several steps to compute the data needed for dashboards like Daily Count Progress, Update Inventory, etc.")
-st.sidebar.image('imagenes/imagen2.png')
-st.sidebar.image('imagenes/imagen3.png')
-st.sidebar.image('imagenes/imagen4.png')
+st.sidebar.image('imagenes/imagen 2.png')
+st.sidebar.image('imagenes/imagen 3.png')
+st.sidebar.image('imagenes/imagen 4.png')
 
 st.header("Resolucion Ejercicio 3 Inventory Discrepancy")
 
