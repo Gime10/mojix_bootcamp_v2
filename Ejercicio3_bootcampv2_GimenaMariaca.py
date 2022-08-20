@@ -1,12 +1,11 @@
 import streamlit as st 
 import pandas as pd
 import matplotlib.pyplot as plt 
-st.sidebar.markdown("### My first Awesome App")
-st.sidebar.markdown("Welcome to my first awesome app. This app is built using Streamlit and uses data source from redfin housing market data. I hope you enjoy!")
+st.sidebar.markdown("### OVERVIEW ###")
+st.sidebar.image('imagenes/imagen1.png')
 
 st.title("Resolucion Ejercicio 3 Inventory Discrepancy")
-st.write("Overview of  the problem")
-st.image('imagenes/imagen1.png')
+
 df_expected = pd.read_csv("https://storage.googleapis.com/mojix-devops-wildfire-bucket/analytics/bootcamp_2_0/Bootcamp_DataAnalysis_Expected.csv", encoding="latin-1", dtype=str)
 df_counted = pd.read_csv("https://storage.googleapis.com/mojix-devops-wildfire-bucket/analytics/bootcamp_2_0/Bootcamp_DataAnalysis_Counted.csv", encoding="latin-1", dtype=str)
 
