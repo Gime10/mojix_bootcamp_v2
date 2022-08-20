@@ -1,6 +1,6 @@
 import streamlit as st
 import pandas as pd
-import seaborn as sns
+
 import matplotlib.pyplot as plt
 
 st.title("Hola ingrese aqui su csv")
@@ -10,7 +10,7 @@ if file:
     st.dataframe(df)
     st.markdown("------")
     fig1=plt.figure(figsize=(10,4))
-    sns.countplot(x="pclass",data=df)
+    
     st.pyplot(fig1)
     fig2=plt.figure(figsize=(10,4))
 
