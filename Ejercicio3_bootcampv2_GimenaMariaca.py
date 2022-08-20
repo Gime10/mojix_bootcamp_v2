@@ -2,6 +2,7 @@ import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt 
 st.sidebar.markdown("### OVERVIEW ###")
+st.sidebar.markdown("Stock/Inventory Discrepancy is the process where ytem Retail compares the SOH data sent by the customer with the scanned items during anInventory workflow using the ytem app.")
 st.sidebar.image('imagenes/imagen1.png')
 
 st.title("Resolucion Ejercicio 3 Inventory Discrepancy")
