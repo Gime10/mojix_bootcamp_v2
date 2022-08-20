@@ -4,8 +4,12 @@ import matplotlib.pyplot as plt
 st.sidebar.markdown("### OVERVIEW ###")
 st.sidebar.markdown("Stock/Inventory Discrepancy is the process where ytem Retail compares the SOH data sent by the customer with the scanned items during anInventory workflow using the ytem app.")
 st.sidebar.image('imagenes/imagen1.png')
+st.sidebar.markdown("The Discrepancy process has several steps to compute the data needed for dashboards like Daily Count Progress, Update Inventory, etc.")
+st.sidebar.image('imagenes/imagen2.png')
+st.sidebar.image('imagenes/imagen3.png')
+st.sidebar.image('imagenes/imagen4.png')
 
-st.title("Resolucion Ejercicio 3 Inventory Discrepancy")
+st.header("Resolucion Ejercicio 3 Inventory Discrepancy")
 
 df_expected = pd.read_csv("https://storage.googleapis.com/mojix-devops-wildfire-bucket/analytics/bootcamp_2_0/Bootcamp_DataAnalysis_Expected.csv", encoding="latin-1", dtype=str)
 df_counted = pd.read_csv("https://storage.googleapis.com/mojix-devops-wildfire-bucket/analytics/bootcamp_2_0/Bootcamp_DataAnalysis_Counted.csv", encoding="latin-1", dtype=str)
