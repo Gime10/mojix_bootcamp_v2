@@ -13,6 +13,7 @@ st.header("Resolucion Ejercicio 3 Inventory Discrepancy")
 
 df_expected = pd.read_csv("https://storage.googleapis.com/mojix-devops-wildfire-bucket/analytics/bootcamp_2_0/Bootcamp_DataAnalysis_Expected.csv", encoding="latin-1", dtype=str)
 df_counted = pd.read_csv("https://storage.googleapis.com/mojix-devops-wildfire-bucket/analytics/bootcamp_2_0/Bootcamp_DataAnalysis_Counted.csv", encoding="latin-1", dtype=str)
+st.header("EXPECTED")
 st.markdown("ver dataframe expected")
 df_expected.sample(2).T
 st.header("COUNTED TRANSFORMATION")
@@ -34,6 +35,7 @@ my_cols_selected = ["Retail_Product_Color",
 "Retail_SOHQTY"]
 df_A = df_expected[my_cols_selected]
 df_A.head().T
+st.header("MERGE EXPECTED AND COUNTED")
 df_discrepancy = pd.merge(df_A, df_B, how="outer", left_on="Retail_Product_SKU", right_on="Retail_Product_SKU", indicator=True)
 df_discrepancy.head()
 df_discrepancy['Retail_CCQTY'] = df_discrepancy['Retail_CCQTY'].fillna(0)
